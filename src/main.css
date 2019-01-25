@@ -2,13 +2,57 @@ body {
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
 
+section {
+    margin: 30px 0;
+}
+
 button.fruit {
     padding: 3px;
     border-style: ridge;
     height: 50px;
     width: 50px;
+    cursor: pointer;
 }
 
 .fruit img {
     height: 30px;
+}
+
+#caterpillar {
+    line-height: 2em;
+}
+
+.head {
+    height: 70px;
+    width: 70px;
+}
+
+.part {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-left: -12px;
+}
+
+.apple {
+    background: #df342b;
+}
+.banana {
+    background: #f8cf00;
+}
+.blueberry {
+    background: #4c5d9f;
+}
+.cherry {
+    background: #b30b1e;
+}
+.green-apple {
+    background: #a0d53f;
+}
+.mango {
+    background: #ff7a59;
+}
+.orange {
+    background: #f68419;
 }
