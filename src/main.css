@@ -19,7 +19,7 @@ button.fruit {
 }
 
 #caterpillar {
-    line-height: 2em;
+    line-height: 3em;
 }
 
 .head {
@@ -33,6 +33,16 @@ button.fruit {
     width: 50px;
     border-radius: 100%;
     margin-left: -12px;
+    transition: transform 300ms ease-in-out;
+}
+
+#dances {
+    display: flex;
+    align-items: center;
+}
+
+.dance {
+    transform: translateX(-2px) translateY(-10px);
 }
 
 .apple {

@@ -17,26 +17,31 @@ function feedCaterpillar(fruit) {
     caterpillar.appendChild(part);
 }
 
-function getColor(fruit) {
-    if(fruit === 'apple') {
-        return '#d52a34';
+const danceButtons = document.querySelectorAll('button.dance');
+
+for(let index = 0; index < danceButtons.length; index++) {
+    const danceButton = danceButtons[index];
+    danceButton.addEventListener('click', function() {
+        resetAllParts();
+        makeDance(danceButton.value);
+    });
+}
+
+function resetAllParts() {
+    const parts = document.querySelectorAll('.part');
+
+    for(let index = 0; index < parts.length; index++) {
+        const part = parts[index];
+        part.classList.remove('dance');
     }
-    else if(fruit === 'banana') {
-        return '#f8cf00';
-    }
-    else if(fruit === 'blue-berry') {
-        return '#4c5d9f';
-    }
-    else if(fruit === 'cherry') {
-        return '#6c0f10';
-    }
-    else if(fruit === 'green-apple') {
-        return '#a0d53f';
-    }
-    else if(fruit === 'mango') {
-        return '#ff7a59';
-    }
-    else if(fruit === 'orange') {
-        return 'f68419';
+}
+
+function makeDance(fruit) {
+    const selector = '.part.' + fruit;
+    const parts = document.querySelectorAll(selector);
+
+    for(let index = 0; index < parts.length; index++) {
+        const part = parts[index];
+        part.classList.add('dance');
     }
 }
