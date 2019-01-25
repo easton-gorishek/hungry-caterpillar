@@ -1,0 +1,14 @@
+body {
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+}
+
+button.fruit {
+    padding: 3px;
+    border-style: ridge;
+    height: 50px;
+    width: 50px;
+}
+
+.fruit img {
+    height: 30px;
+}
