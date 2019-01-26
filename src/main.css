@@ -36,12 +36,7 @@ button.fruit {
     transition: transform 300ms ease-in-out;
 }
 
-#dances {
-    display: flex;
-    align-items: center;
-}
-
-.dance {
+.dancing {
     transform: translateX(-2px) translateY(-10px);
 }
 

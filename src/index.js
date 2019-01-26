@@ -32,7 +32,7 @@ function resetAllParts() {
 
     for(let index = 0; index < parts.length; index++) {
         const part = parts[index];
-        part.classList.remove('dance');
+        part.classList.remove('dancing');
     }
 }
 
@@ -42,6 +42,6 @@ function makeDance(fruit) {
 
     for(let index = 0; index < parts.length; index++) {
         const part = parts[index];
-        part.classList.add('dance');
+        part.classList.add('dancing');
     }
 }
