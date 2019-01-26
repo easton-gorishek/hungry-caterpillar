@@ -1,8 +1,30 @@
 
-const fruitButtons = document.querySelectorAll('button.fruit');
+const fruits = [
+    'apple',
+    'banana',
+    'blueberry',
+    'cherry',
+    'green-apple',
+    'mango',
+    'orange'
+];
 
-for(let index = 0; index < fruitButtons.length; index++) {
-    const fruitButton = fruitButtons[index];
+const fruitButtons = document.getElementById('fruit-buttons');
+
+for(let index = 0; index < fruits.length; index++) {
+    const fruit = fruits[index];
+
+    const fruitButton = document.createElement('button');
+    fruitButton.classList.add('fruit');
+    fruitButton.value = fruit;
+
+    const image = document.createElement('img');
+    const source = 'assets/fruits/' + fruit + '.png';
+    image.src = source;
+
+    fruitButton.appendChild(image);
+    fruitButtons.appendChild(fruitButton);
+
     fruitButton.addEventListener('click', function() {
         feedCaterpillar(fruitButton.value);
     });
